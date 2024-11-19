@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style/style.css"/>    
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <section id="title">
+            Login
+        </section>
+        <section id="keys">
+            <form action="" method="post">
+                <div class="groupInput">
+                    <div class="icon">
+                       <img src="./src/utils/icon.png" alt="" class="pngIcon">
+                    </div>
+                    <input class="inputForm" type="text" id="name" name="name" required/>
+                </div>
+                <div class="groupInput">
+                    <div class="icon">
+                       <img src="./src/utils/Lock.png" alt="" class="pngIcon">
+                    </div>
+                    <input class="inputForm" type="password" id="passsword" name="passsword" required/>
+                </div>    
+            </form>
+        </section>
+        <section id="options">
+            <div id="checkbox">
+                <label for="checked" class="labelForOptions">
+                <input id="checkRemeber" type="checkbox" name="opcao2" value="opcao2">
+                    Remeber me
+                 </label>
+            </div>
+            <div id="forgat">
+                <a href="">
+                 <p>Forgat you passwor?</p>
+                </a>
+            </div>
+        </section>
+        <section id="callToLogin">
+            <button class="buttonBase" type="submit">
+                LOGIN
+            </button>
+        </section>
+    </div>
+</body>
+</html>
+
+
+
+<!-- <form action="" method="post">
+    <label for="nome"></label>
+    <input type="text" id="name" name="name" required/>
+
+    <label for="passsword"></label>
+    <input type="text" id="passsword" name="passsword"name required/>
+</form> -->

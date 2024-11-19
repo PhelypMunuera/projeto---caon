@@ -1,0 +1,16 @@
+
+@import url('./reset.css');
+@import url('./buttonsBase.css');
+@import url('./centerOfBackgroud.css');
+
+body{
+    display: flex;
+    background-image: url(../utils/Backgroud-2.png);
+    width: 100vw;
+    height: 100vh;
+    background-color: #405cb8;
+}
+
+.container{
+margin: auto;
+}

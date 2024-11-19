@@ -1,0 +1,115 @@
+@import url('./reset.css');
+@import url('./buttonsBase.css');
+
+button {
+    cursor: pointer;
+}
+
+body {
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center; 
+    align-items: center;
+
+    background-image: url('../utils/c1cdd30b4f16b45ff56701f9d15b94fd.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.container{
+    background-color:  rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(28px);
+    padding: 24px 42px;
+    border-radius: 47px;
+    box-shadow:  0px -2px 4px rgba(255, 255, 255, 0.5);
+}
+#title {
+    margin-bottom: 24px;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 31px;
+    margin: 0, auto;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input {
+    
+    width: 100%;          
+    height: 38px;         
+    background-color:#0F1445;
+    color: #fff;
+    border: none;
+    padding: 0px 10px;
+}
+
+.groupInput{
+    display: flex;
+}
+
+#checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.labelForOptions{
+    display: flex;
+    align-items: center; 
+    gap: 5px;
+    cursor: pointer;
+}
+
+#checkRemeber {
+    width: 15px;
+    height: 15px;
+    
+}
+
+#options {
+    display: flex;
+    font-size: 12px;
+    margin-top: 14px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+    color: #fff;
+    padding: 0px 12px;
+}
+
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.icon{
+    display: flex;
+    background-color: #454677;
+    padding: 10px 24px;
+}
+
+.pngIcon {
+    width: 18px;
+    height: 18px;
+    
+}
+
+.inputForm::placeholder {
+    color: #ffffff; 
+}
+
