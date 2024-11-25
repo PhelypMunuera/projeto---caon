@@ -3,7 +3,7 @@
 @import url('./centerOfBackgroud.css');
 
 body{
-    display: flex;
+  display: flex;
     background-image: url(../utils/Backgroud-2.png);
     width: 100vw;
     height: 100vh;
@@ -102,10 +102,19 @@ input {
     font-size: 20px;
 }
 
-footer {
+nav {
     margin: auto;
     width: 60vw;
     display: flex;
     justify-content: space-between;
     padding-bottom: 50px;
+}
+
+footer > img {
+    width: 120px;
+}
+footer {
+    display: flex;
+    justify-content: center;  
+    margin-bottom: 50px;
 }

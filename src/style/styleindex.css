@@ -5,12 +5,9 @@ button {
     cursor: pointer;
 }
 
-body {
-width: 100vw;
-height: 100vh;
-display: flex;
-justify-content: center; 
-    align-items: center;
+body{
+    width: 100vw;
+    height: 100vh;
 
     background-image: url('../utils/c1cdd30b4f16b45ff56701f9d15b94fd.jpeg');
     background-size: cover;
@@ -19,8 +16,20 @@ justify-content: center;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+
 }
 
+
+
+main{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+   
+}
 .container{
     background-color:  rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(28px);
@@ -113,3 +122,10 @@ a {
     color: #ffffff; 
 }
 
+footer > img {
+    width: 120px;
+}
+footer {
+    display: flex;
+justify-content: center;  
+}

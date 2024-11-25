@@ -4,13 +4,18 @@
 @import url('./centerOfBackgroud.css');
 
 body{
-    display: flex;
+  
     background-image: url(../utils/Backgroud-2.png);
     width: 100vw;
     height: 100vh;
     background-color: #405cb8;
+
 }
 
+section{
+    display: flex;
+    height: 80vh;
+}
 .container{
 margin: auto;
 }
@@ -54,4 +59,13 @@ nav{
 input::placeholder{
     font-family: "Montserrat", sans-serif;
     color: #fff;
+}
+
+
+footer > img {
+    width: 120px;
+}
+footer {
+    display: flex;
+justify-content: center;  
 }
