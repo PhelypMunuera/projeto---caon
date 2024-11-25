@@ -11,9 +11,7 @@
     <title>Buscar Cliente</title>
 </head>
 <body>
-    <h1>
-        Registro de paciente:
-    </h1>
+
     <main class="container">
         <h2>
             Informações básicas
@@ -37,38 +35,41 @@
             </section >
 
             <section class="personalInformations">
-                <label for="suaCard">Cartão SUS</label>
+                <label class="label" for="suaCard">Cartão SUS</label>
                 <input type="text" id="suaCard" placeholder="">
 
-                <label for="name">Nome</label>
+                <label class="label" for="name">Nome</label>
+                <label class="label1gap" for="dateOfBirth">Data de Nacimento</label>
                 <input type="text" id="name" placeholder="">
+
                 
-                <label for="afiliation">Filiação</label>
-                <input type="text" id="afiliation" placeholder="">
+                <input type="text" id="dateOfBirth" placeholder=""> <!--campo de data -->
                 
-                <label for="dateOfBirth">Data de Nacimento</label>
-                <input type="text" id="dateOfBirth" placeholder="">
+                <label class="label" for="afiliation">Filiação</label>
+                <label class="label1gap" for="gender">Sexo</label>
+
+                <input type="text" id="afiliation" placeholder=""> <!--campo de filiação -->
+                <input type="text" id="gender" placeholder=""> <!--campo de sexo -->
                 
-                <label for="gender"></label>
-                <input type="text" id="gender" placeholder="">
+
+
+
+                <label class="oneLabel" for="Raça">Etinia</label>
+                <label class="oneLabel" for="CPF">CPF</label>
+                <label class="oneLabel" for="RG">RG</label>
+
+                <input type="text" id="Raça" placeholder=""><!--campo de Etinia -->
+                <input type="text" id="CPF" placeholder=""><!--campo de CPF -->
+                <input type="text" id="RG" placeholder=""><!--campo de RG -->
                 
-                <label for="Raça">Raça</label>
-                <input type="text" id="Raça" placeholder="">
-                
-                <label for="CPF">CPF</label>
-                <input type="text" id="CPF" placeholder="">
-                
-                <label for="RG">RG</label>
-                <input type="text" id="RG" placeholder="">
-                
-                <label for="CNS">CNS</label>
-                <input type="text" id="CNS" placeholder="">
-                
-                <label for="phoneNumber">Telefone</label>
-                <input type="text" id="phoneNumber" placeholder="">
-                
-                <label for="civilStatus">Estado Civil</label>
-                <input type="text" id="civilStatus" placeholder="">
+
+                <label class="oneLabel" for="CNS">CNS</label>
+                <label class="oneLabel" for="phoneNumber">Telefone</label>
+                <label class="oneLabel" for="civilStatus">Estado CivilS</label>
+
+                <input type="text" id="CNS" placeholder=""><!--campo de cns -->
+                <input type="text" id="phoneNumber" placeholder=""><!--campo de PHONE -->
+                <input type="text" id="civilStatus" placeholder=""><!--campo de estado civil-->
                 
             </section>
 

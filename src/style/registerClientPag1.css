@@ -11,15 +11,25 @@ body{
     flex-direction: column;
 }
 
+
+h1 {
+    color: #f0f0f0;
+}
+
 .container{
 background-color: #fff ;
-/* width: 40vw; */
 margin: auto;
 border-radius: 16px;
-padding: 20px;
+padding: 40px;
 }
 .header{
     display: flex;
+}
+
+h2 {
+    font-weight: 600;
+    margin-bottom: 16px;
+
 }
 
 .datafirst {
@@ -32,6 +42,7 @@ padding: 20px;
     border-radius: 8px;
     margin: auto;
     gap: 4px;
+    margin-left: 20px;
 }
 .datafirst > input {
     border: none;
@@ -48,10 +59,33 @@ padding: 20px;
 .fieldOfdata{
     height: 24px;
 }
-
+.personalInformations >input{
+    height: 24px;
+}
 .personalInformations {
-    display: flex;
-flex-direction: column;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+}
+
+.label{
+    grid-column: span 2;
+    margin-top: 12px;
+
+}
+
+.label1gap{
+    margin-top: 12px;
+}
+
+.oneLabel{
+    margin-top: 12px;
+
+}
+
+#suaCard, #name, #afiliation {
+    grid-column: span 2;
 }
 
 .personalInformations > input {
@@ -63,10 +97,15 @@ flex-direction: column;
 
 
 
-
+input {
+    padding: 15px;
+    font-size: 20px;
+}
 
 footer {
+    margin: auto;
+    width: 60vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-bottom: 50px;
 }
