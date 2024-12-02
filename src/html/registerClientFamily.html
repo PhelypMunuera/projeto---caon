@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/registerClientPag2.css"/>  
        
+    
     <title>Buscar Cliente</title>
 </head>
 <body>
@@ -28,21 +29,23 @@
 
                
               <section class="newMenber">
-                <input type="text" id="suaCard" placeholder="Nome">
-                <input type="text" id="suaCard" placeholder="idade">
-                <input type="text" id="suaCard" placeholder="Parentesco">
-                <input type="text" id="suaCard" placeholder="Escolaridade">
-                <input type="text" id="suaCard" placeholder="Profissão">
-                <input type="text" id="suaCard" placeholder="Renda">
+                <input type="text" id="newMenberName" placeholder="Nome">
+                <input type="text" id="newMenberOld" placeholder="idade">
+                <input type="text" id="newMenberPararents" placeholder="Parentesco">
+                <input type="text" id="newMenberEducation" placeholder="Escolaridade">
+                <input type="text" id="newMenberProfession" placeholder="Profissão">
+                <input type="text" id="newMenberIncome" placeholder="Renda">
               </section>
                 
 
-            <nav>
-                <span>
-                    +
+            <nav id="moreMember">
+                <span class="moreMember">
+                    <img src="../utils/add_circle_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt="">
                 </span>
             </nav>
-                
+
+            <input type="text" id="newMenberIncomeTotal" placeholder="Renda Total">
+
             </section>
 
             <section class="home">
@@ -54,9 +57,9 @@
                 </h5>
 
                 <label for="house">Casa</label>
-                <input id="house" type="text">
-
                 <label for="stayHere">Tempo de Moradia no Municipio</label>
+
+                <input id="house" type="text">               
                 <input id="stayHere" type="text">
 
             </section>
@@ -65,6 +68,7 @@
 
                <div class="health">
                     <h6>CONSIÇÕES DE SAÚDE</h6>
+                    <h6>CONSIÇÕES DE SAÚDE</h6> <!--Legenda da segunda seção dessa div-->
                     <section class="healthdata">
 
                         <input id="Diabetic" type="checkbox">
@@ -74,7 +78,7 @@
                         <label for="hypertensive">Hipertenso</label>
                         
                         <input id="renal" type="checkbox">
-                        <label for="renal">Renal/label>
+                        <label for="renal">Renal</label>
 
                         <input id="hiv" type="checkbox">
                         <label for="hiv">HIV</label>
@@ -87,8 +91,8 @@
                         
                     </section>
 
-                    <h6>CONSIÇÕES DE SAÚDE</h6>
-                    <section class="healthdata">
+                  
+                    <section class="healthdata disabled" >
 
                         <input id="physics" type="checkbox">
                         <label for="physics">Físico</label>
@@ -107,16 +111,24 @@
 
                 <section class="otherData">  
 
-                    <label for="otherCondition">Condição de Saúde</label>
-                    <input id="otherCondition" type="checkbox" placeholder="Outros">
+                    <label  for="otherCondition">Condição de Saúde</label>
+                    <input id="otherCondition" type="text" placeholder="Outros">
 
-                    <label for="otherDeficiency">Deficência</label>
-                    <input id="otherDeficiency" type="checkbox">
+                    <label id="labelotherCondition" for="otherDeficiency">Deficência</label>
+                    <input id="otherDeficiency" type="text">
 
                 </section>    
 
             </div>
            </section>
+
+
+
+
+
+
+
+
 
            <section class="antecedent">   
                 <label for="antecedentFamily">Antecedentes Familiares em Oncologia</label>
@@ -156,9 +168,9 @@
 
     <nav>
         <!-- mudar caminho com js -->
-        <a href="../../index.html">
+        <a href="./registerClient.html">
             <button class="buttonBase">
-                Home
+                Anterior
             </button>
         </a>
         <button class="buttonBase">

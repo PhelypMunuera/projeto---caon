@@ -1,0 +1,146 @@
+@import url(./reset.css);
+@import url(./buttonsBase.css);
+@import url('./centerOfBackgroud.css');
+
+body{
+  display: flex;
+    background-image: url(../utils/Backgroud-2.png);
+    width: 100vw;
+    height: 100vh;
+    background-color: #405cb8;
+    flex-direction: column;
+}
+
+input {
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+
+}
+.container{
+background-color: #fff ;
+margin: auto;
+border-radius: 16px;
+padding: 40px;
+margin-top: 60px;
+width: 50%;
+}
+/* .header{
+    display: flex;
+} */
+
+.newMenber{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 10px;
+}
+
+#newMenberName{
+    grid-column: span 5;
+
+}
+
+#newMenberPararents{
+    grid-column: span 3;
+    
+
+}
+
+#newMenberEducation,#newMenberProfession, #newMenberIncome{
+    grid-column: span 3;
+}
+
+#newMenberIncomeTotal{
+    width: 30%;
+}
+#moreMember{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    padding: 15px;
+}
+h5, h6{
+    margin-top: 20px;
+}
+.moreMember>img{
+    width: 20px;
+    cursor: pointer;
+}
+
+.home{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+
+.home>h5{
+    grid-column: span 2;
+}
+
+
+.illnesses, .health{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+
+
+}
+
+
+.healthdata{
+    background-color:  #f0f0f0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 8px;
+    gap: 5px;
+    padding: 10px;
+}
+
+.healthdata>input {
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+}
+
+
+.disabled {
+    height: 100%;
+    align-items:center;
+    height: 90px;
+}
+
+.otherData{
+    margin-top: 20px;   
+}
+
+#otherCondition{
+    margin-bottom: 20px;
+}
+
+ 
+
+
+
+
+
+
+
+nav {
+    margin: auto;
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+footer > img {
+    width: 120px;
+}
+footer {
+    display: flex;
+    justify-content: center;  
+    margin-bottom: 50px;
+}
