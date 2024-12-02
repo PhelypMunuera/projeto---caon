@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/registerClientPag2.css"/>  
+       
+    <title>Buscar Cliente</title>
+</head>
+<body>
+
+    <main class="container">
+        <h2>
+            Informações básicas
+        </h2>
+         <form action="/submit" method="post">
+
+            <section class="familyInformations">
+                <h5> 
+                     COMPOSIÇÃO FAMILIAR
+                    <span class="hide">
+                      Ocultar
+                    </span>
+                </h5>
+
+               
+              <section class="newMenber">
+                <input type="text" id="suaCard" placeholder="Nome">
+                <input type="text" id="suaCard" placeholder="idade">
+                <input type="text" id="suaCard" placeholder="Parentesco">
+                <input type="text" id="suaCard" placeholder="Escolaridade">
+                <input type="text" id="suaCard" placeholder="Profissão">
+                <input type="text" id="suaCard" placeholder="Renda">
+              </section>
+                
+
+            <nav>
+                <span>
+                    +
+                </span>
+            </nav>
+                
+            </section>
+
+            <section class="home">
+                <h5>
+                    SITUAÇÃO HABITACIONAL
+                    <span class="hide">
+                        Ocultar
+                    </span>
+                </h5>
+
+                <label for="house">Casa</label>
+                <input id="house" type="text">
+
+                <label for="stayHere">Tempo de Moradia no Municipio</label>
+                <input id="stayHere" type="text">
+
+            </section>
+
+           <section class="illnesses">
+
+               <div class="health">
+                    <h6>CONSIÇÕES DE SAÚDE</h6>
+                    <section class="healthdata">
+
+                        <input id="Diabetic" type="checkbox">
+                        <label for="Diabetic">Diabetico</label>
+
+                        <input id="hypertensive" type="checkbox">
+                        <label for="hypertensive">Hipertenso</label>
+                        
+                        <input id="renal" type="checkbox">
+                        <label for="renal">Renal/label>
+
+                        <input id="hiv" type="checkbox">
+                        <label for="hiv">HIV</label>
+                        
+                        <input id="tb" type="checkbox">
+                        <label for="tb">TB</label>
+                        
+                        <input id="mh" type="checkbox">
+                        <label for="mh">MH</label>
+                        
+                    </section>
+
+                    <h6>CONSIÇÕES DE SAÚDE</h6>
+                    <section class="healthdata">
+
+                        <input id="physics" type="checkbox">
+                        <label for="physics">Físico</label>
+
+                        <input id="mental" type="checkbox">
+                        <label for="mental">Mental</label>
+                        
+                        <input id="visual" type="checkbox">
+                        <label for="visual">Visual</label>
+
+                    </section>
+
+               </div>
+
+               <div class="health">
+
+                <section class="otherData">  
+
+                    <label for="otherCondition">Condição de Saúde</label>
+                    <input id="otherCondition" type="checkbox" placeholder="Outros">
+
+                    <label for="otherDeficiency">Deficência</label>
+                    <input id="otherDeficiency" type="checkbox">
+
+                </section>    
+
+            </div>
+           </section>
+
+           <section class="antecedent">   
+                <label for="antecedentFamily">Antecedentes Familiares em Oncologia</label>
+                <input type="text">
+
+                <label for="ca">CA</label>
+                <input id="ca" type="text">
+           </section>
+
+           <section class="oncology">
+           
+            <label for="CID">CID</label>
+            <input id="CID" type="text">
+
+            <label for="neoplasia">Neoplasia</label>
+            <input id="neoplasia" type="text">
+
+
+            <label for="dateOfDiagnostic">Data do Diagnostico</label>
+            <input id="dateOfDiagnostic" type="date">
+
+            <label for="trasfusion">Trasfusão de Sague</label>
+            <input id="trasfusion" type="text">
+            <select>
+                <option value="aceita">Aceita</option>
+                <option value="nao_aceita">Não Aceita</option>
+              </select>
+
+            <input id="chemotherapy" type="text">
+
+           </section>
+
+
+         </form>
+       
+    </main>
+
+    <nav>
+        <!-- mudar caminho com js -->
+        <a href="../../index.html">
+            <button class="buttonBase">
+                Home
+            </button>
+        </a>
+        <button class="buttonBase">
+           Proximo
+        </button>
+    </nav>
+
+    <footer>
+
+            <img class="imgfooter" src="../utils/Logos-02.png" alt="">
+            <img class="imgfooter" src="../utils/Logos-03.png" alt="">
+            <img class="imgfooter" src="../utils/Logos-04.png" alt="">
+       
+    </footer>
+</body>
+</html>

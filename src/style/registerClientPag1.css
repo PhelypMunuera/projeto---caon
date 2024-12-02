@@ -21,6 +21,7 @@ background-color: #fff ;
 margin: auto;
 border-radius: 16px;
 padding: 40px;
+margin-top: 60px;
 }
 .header{
     display: flex;
@@ -60,7 +61,7 @@ h2 {
     height: 24px;
 }
 .personalInformations >input{
-    height: 24px;
+    height: 32px;
 }
 .personalInformations {
     margin-top: 30px;
@@ -72,15 +73,21 @@ h2 {
 .label{
     grid-column: span 2;
     margin-top: 12px;
+    padding: 0 0 0 4px ;
+
 
 }
 
 .label1gap{
     margin-top: 12px;
+    padding: 0 0 0 4px ;
+
 }
 
 .oneLabel{
     margin-top: 12px;
+    padding: 0 0 0 4px ;
+
 
 }
 
