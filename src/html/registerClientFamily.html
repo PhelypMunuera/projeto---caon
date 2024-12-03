@@ -123,39 +123,41 @@
            </section>
 
 
-
-
-
-
-
-
-
            <section class="antecedent">   
                 <label for="antecedentFamily">Antecedentes Familiares em Oncologia</label>
-                <input type="text">
-
                 <label for="ca">CA</label>
+                
+                <input type="text">                
                 <input id="ca" type="text">
            </section>
 
            <section class="oncology">
            
-            <label for="CID">CID</label>
-            <input id="CID" type="text">
+            <label id="CID" for="CID">CID</label>
+            <label id="neoplasia" for="neoplasia">Neoplasia</label>
 
-            <label for="neoplasia">Neoplasia</label>
-            <input id="neoplasia" type="text">
+            <input id="CID" type="text"><!--CID-->            
+            <input id="neoplasia" type="text"> <!--Neoplasia-->
+
+
+
+
+
 
 
             <label for="dateOfDiagnostic">Data do Diagnostico</label>
-            <input id="dateOfDiagnostic" type="date">
+            <label id="trasfusionlabel" for="trasfusion">Trasfusão de Sague</label>
 
-            <label for="trasfusion">Trasfusão de Sague</label>
-            <input id="trasfusion" type="text">
-            <select>
+           
+
+            <input id="dateOfDiagnostic" type="date"><!--data do diagnostico-->
+            
+            <select class="trasfusionBload"> <!--input de trasfus-->
                 <option value="aceita">Aceita</option>
                 <option value="nao_aceita">Não Aceita</option>
-              </select>
+            </select>
+            
+               
 
             <input id="chemotherapy" type="text">
 

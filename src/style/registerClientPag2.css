@@ -93,10 +93,11 @@ h5, h6{
 .healthdata{
     background-color:  #f0f0f0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 8fr;
     border-radius: 8px;
     gap: 5px;
-    padding: 10px;
+    padding: 5px;
+
 }
 
 .healthdata>input {
@@ -121,11 +122,63 @@ h5, h6{
 }
 
  
+.antecedent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin-top: 20px;
+}
 
 
+.oncology{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    margin-top: 20px;
+}
+#CID{
+    grid-column: span 1;
+
+}
+
+#neoplasia{
+    grid-column: span 9;
+}
 
 
+#dateOfDiagnostic {
+    grid-column: span 1;
 
+}
+
+.trasfusionBload{
+    grid-column: span 4;
+    background-color:  #f0f0f0;
+    border: none;
+    border-radius: 8px;
+    
+}
+
+#trasfusion{
+    grid-column: span 6;
+
+    background-color: #405cb8;
+}
+
+#trasfusionlabel{
+    grid-column: span 9;
+    
+
+}
+
+
+#chemotherapy{
+    grid-column: span 5;
+}
+
+label{
+    padding: 0 0 0 5px;
+}
 
 
 nav {
