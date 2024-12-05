@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/registerClientPag3.css"/>  
+       
+    
+    <title>Medical Informations</title>
+</head>
+<body>
+
+    <main class="container">
+        <h2>
+            Informações Medicas
+        </h2>
+         <form action="/submit" method="post">
+
+           <section class="dateDoctors">
+           
+                <label for="forwardedBy">Encaminhado pelo Drº</label>
+                <label for="forOnco">Para Onco</label>
+                <label for="performance">Performace</label>
+
+                <input id="forwardedBy" type="text"><!--Encaminhado pelo Drº-->            
+                <input id="forOnco" type="text"><!--Para Onco-->            
+                <select id="performance"> <!--Performace-->
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="4">04</option>
+                    <option value="5">05</option>                
+                </select>
+            
+           </section>
+
+           <section class="treatment">
+            <h6>TRATAMENTO ONCOLÓGICO</h6>
+                <label for="">Inserido na Rede</label>
+                <label for="">Por</label>
+                <label for="">Data de Agendamento</label>
+
+                <input type="date">
+                <input type="text">
+                <input type="date">
+
+                <label for="">Unidade de Tratamento</label>
+                <label for="">Outro</label>
+                <label for="">Utiliza Transporte</label>
+                <input type="text">
+                <input type="text">
+                <input type="text">
+
+
+           </section>
+
+           <section class="surgery">
+                <label for="metastasis">Mestatáse</label>
+                <label for="surgeryDate">Cirurgia para retirada do tumor</label>
+
+                <input id="metastasis" type="text">          
+                <input id="surgeryDate" type="date">
+
+           </section>
+
+           <section class="treatmentDates">
+                <label for="quimioterapia">Quimioterapia</label>
+                <label for="imunoterapia">Imunoterapia</label>
+                <label for="harmonoterapia">Harmonoterapia</label>
+                <label for="radioterapia">Radioterapia</label>
+
+
+                <input id="quimioterapia" type="date"> <!--Quimioterapia-->               
+                <input id="imunoterapia" type="date"> <!--Imunoterapia-->              
+                <input id="harmonoterapia" type="date"> <!--Harmonoterapia-->              
+                <input id="radioterapia" type="date"> <!--Radioterapia-->
+
+
+
+                <label for="iodoterapia">Iodoterapia</label>
+                <label id="outro" for="outro">Outro</label>
+
+                <input id="iodoterapia" type="date">
+                <input id="outro" type="text">
+
+
+           </section>
+
+           <section class="other">
+                    <label for="atendiment">Atendimento Multidisciplinar</label>
+                    <input type="text" placeholder="-">
+
+                    <label for="observations">Observações</label>
+                    <input class="obs" type="text">
+           </section>
+
+           
+         </form>
+       
+    </main>
+
+    <nav>
+        <!-- mudar caminho com js -->
+        <a href="./registerClient.html">
+            <button class="buttonBase">
+                Anterior
+            </button>
+        </a>
+        <button class="buttonBase" >
+           Cadastrar
+        </button>
+    </nav>
+
+    <footer>
+
+            <img class="imgfooter" src="../utils/Logos-02.png" alt="">
+            <img class="imgfooter" src="../utils/Logos-03.png" alt="">
+            <img class="imgfooter" src="../utils/Logos-04.png" alt="">
+       
+    </footer>
+</body>
+</html>

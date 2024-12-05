@@ -1,0 +1,112 @@
+@import url(./reset.css);
+@import url(./buttonsBase.css);
+@import url('./centerOfBackgroud.css');
+
+body{
+  display: flex;
+    background-image: url(../utils/Backgroud-2.png);
+    width: 100vw;
+    height: 100vh;
+    background-color: #405cb8;
+    flex-direction: column;
+}
+
+input {
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+
+}
+.container{
+background-color: #fff ;
+margin: auto;
+border-radius: 16px;
+padding: 40px;
+margin-top: 60px;
+}
+
+.dateDoctors {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap:10px; 
+    row-gap: 5px;
+}
+
+#performance{
+    border: none;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+}
+
+.treatment {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap:10px; 
+    row-gap: 5px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+h6{
+    grid-column: span 3;
+}
+
+.surgery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 5px;
+}
+
+.treatmentDates{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap:10px; 
+    row-gap: 5px;
+    margin-top: 20px;
+    padding: 10px;
+}
+#outro{
+    grid-column: span 3;
+}
+
+.other{
+    display: flex;
+    flex-direction: column;
+}
+
+.other>label{
+    margin: 20px 0 5px 0;
+}
+
+
+
+
+
+h5, h6{
+    margin-top: 20px;
+}
+
+label{
+    padding: 0 0 0 5px;
+}
+
+
+nav {
+    margin: auto;
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+footer > img {
+    width: 120px;
+}
+footer {
+    display: flex;
+    justify-content: center;  
+    margin-bottom: 50px;
+}
