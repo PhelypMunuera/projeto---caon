@@ -1,6 +1,7 @@
 @import url(./reset.css);
 @import url(./buttonsBase.css);
 @import url('./centerOfBackgroud.css');
+@import url('./buttonHome.css');
 
 body{
   display: flex;

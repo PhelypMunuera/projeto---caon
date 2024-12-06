@@ -2,6 +2,7 @@
 @import url(./buttonsBase.css);
 @import url('./centerOfBackgroud.css');
 @import url('./styleDate.css');
+@import url('./buttonHome.css');
 
 body{
   display: flex;

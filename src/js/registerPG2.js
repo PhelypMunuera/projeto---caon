@@ -35,3 +35,10 @@ moreMember.onclick = function(){
 container.appendChild(newSection); 
 
 }
+
+const homeButton = document.getElementById("containerHome");
+
+homeButton.onclick = function (){
+     window.location.href = "../html/selectAction.html"
+
+}

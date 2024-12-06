@@ -24,3 +24,10 @@ homeButton.onclick = function(){
    
     window.location.href = "../html/selectAction.html"
 }
+
+const homeButton = document.getElementById("containerHome");
+
+homeButton.onclick = function (){
+     window.location.href = "../html/selectAction.html"
+
+}

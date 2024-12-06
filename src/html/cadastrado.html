@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../style/styleSelectTeste.css"/> 
  
 
-        <title>Teste</title>
+        <title>Usuario cadastrado</title>
 </head>
 <body>
 
@@ -24,32 +24,48 @@
                                 
                 <div class="datafirst">
                         <label for="medicalRecord">Medical Record</label>
-                        <input class="fieldOfdata" type="text" id="medicalRecord" name="medicalRecord">
+                        <div class="fieldOfdata" id="medicalRecord"> 
+                            <p>teste</p>
+                        </div>
                         
                         <label for="date">Date</label>
-                        <input class="fieldOfdata" type="text" id="date" name="medicalRecord">
+                        <div class="fieldOfdata" id="date">
+                            <p>teste</p>
+                        </div>
+
                         
                         <label for="SIRESP">SIRESP</label>
-                        <input class="fieldOfdata" type="text" id="SIRESP" name="medicalRecord">
+                        <div class="fieldOfdata" id="SIRESP">
+                            <p>teste</p>
+                        </div>
                 </div>
                 </section >
 
                 <section class="personalInformations">
-                    <label class="label" for="suaCard">Cartão SUS</label>
-                    <input type="text" id="suaCard" placeholder="">
+                    <label id="suaCard" class="label" for="suaCard">Cartão SUS</label>
+                    <div id="suaCard">
+                        <p>0000.000.000.000.000</p>
+                    </div>
 
-                    <label class="label" for="name">Nome</label>
+                    <label class="label" id="name" for="name">Nome</label>
                     <label class="label1gap" for="dateOfBirth">Data de Nacimento</label>
-                    <input type="text" id="name" placeholder="">
-
+                    <div id="name">
+                        <p>teste teste teste</p>
+                    </div>
                     
-                    <input type="text" id="dateOfBirth" placeholder=""> <!--campo de data -->
+                    <div id="dateOfBirth">
+                        <p>00/00/0000</p>
+                    </div> <!--campo de data -->
                     
                     <label class="label" for="afiliation">Filiação</label>
                     <label class="label1gap" for="gender">Sexo</label>
 
-                    <input type="text" id="afiliation" placeholder=""> <!--campo de filiação -->
-                    <input type="text" id="gender" placeholder=""> <!--campo de sexo -->
+                    <div id="afiliation">
+                        <p>teste</p>
+                    </div> <!--campo de filiação -->
+                    <div id="gender">
+                        <p>masculino</p>
+                    </div> <!--campo de sexo -->
                     
 
 
@@ -58,18 +74,24 @@
                     <label class="oneLabel" for="CPF">CPF</label>
                     <label class="oneLabel" for="RG">RG</label>
 
-                    <input type="text" id="Raça" placeholder=""><!--campo de Etinia -->
-                    <input type="text" id="CPF" placeholder=""><!--campo de CPF -->
-                    <input type="text" id="RG" placeholder=""><!--campo de RG -->
+                    <div id="Raça"><p>Preto</p></div><!--campo de Etinia -->
+                    <div id="CPF"><p>000.000.000-00</p></div><!--campo de CPF -->
+                    <div id="RG"><p>00.000.000-0</p></div><!--campo de RG -->
                     
 
                     <label class="oneLabel" for="CNS">CNS</label>
                     <label class="oneLabel" for="phoneNumber">Telefone</label>
                     <label class="oneLabel" for="civilStatus">Estado CivilS</label>
 
-                    <input type="text" id="CNS" placeholder=""><!--campo de cns -->
-                    <input type="text" id="phoneNumber" placeholder=""><!--campo de PHONE -->
-                    <input type="text" id="civilStatus" placeholder=""><!--campo de estado civil-->
+                    <div id="CNS">
+                        <p>teste</p>
+                    </div><!--campo de cns -->
+                    <div id="phoneNumber">
+                        <p>teste</p>
+                    </div><!--campo de PHONE -->
+                    <div id="civilStatus">
+                        <p>teste</p>
+                    </div><!--campo de estado civil-->
                     
                 </section>
 
@@ -83,45 +105,54 @@
                 <section class="familyInformations">
                     <h5> 
                         COMPOSIÇÃO FAMILIAR
-                        <span class="hide">
-                        Ocultar
-                        </span>
                     </h5>
 
                 
                 <section class="newMenber">
-                    <input type="text" id="newMenberName" placeholder="Nome">
-                    <input type="text" id="newMenberOld" placeholder="idade">
-                    <input type="text" id="newMenberPararents" placeholder="Parentesco">
-                    <input type="text" id="newMenberEducation" placeholder="Escolaridade">
-                    <input type="text" id="newMenberProfession" placeholder="Profissão">
-                    <input type="text" id="newMenberIncome" placeholder="Renda">
+                    <div id="newMenberName" >
+                        <p>teste</p>
+                    </div>
+                    <div id="newMenberOld" >
+                        <p>teste</p>
+                    </div>
+                    <div id="newMenberPararents">
+                        <p>teste</p>
+                    </div>
+                    <div id="newMenberEducation">
+                        <p>teste</p>
+                    </div>
+                    <div id="newMenberProfession">
+                        <p>teste</p>
+                    </div>
+                    <div id="newMenberIncome" >
+                        <p>teste</p>
+                    </div>
+
+                    <br>
                 </section>
                     
-
-                <nav id="moreMember">
-                    <span class="moreMember">
-                        <img src="../utils/add_circle_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt="">
-                    </span>
-                </nav>
-
-                <input type="text" id="newMenberIncomeTotal" placeholder="Renda Total">
+                <div id="newMenberIncomeTotal">
+                    <p>R$ 000,00</p>
+                </div>
 
                 </section>
+
+
 
                 <section class="home">
                     <h5>
                         SITUAÇÃO HABITACIONAL
-                        <span class="hide">
-                            Ocultar
-                        </span>
                     </h5>
 
                     <label for="house">Casa</label>
                     <label for="stayHere">Tempo de Moradia no Municipio</label>
 
-                    <input id="house" type="text">               
-                    <input id="stayHere" type="text">
+                    <div id="house">
+                        <p>teste</p>
+                    </div>               
+                    <div id="stayHere">
+                        <p>teste</p>
+                    </div>
 
                 </section>
 
@@ -173,10 +204,14 @@
                     <section class="otherData">  
 
                         <label  for="otherCondition">Condição de Saúde</label>
-                        <input id="otherCondition" type="text" placeholder="Outros">
+                        <div id="otherCondition">
+                            <p>Teste</p>
+                        </div>
 
                         <label id="labelotherCondition" for="otherDeficiency">Deficência</label>
-                        <input id="otherDeficiency" type="text">
+                        <div id="otherDeficiency">
+                            <p>Teste</p>
+                        </div>
 
                     </section>    
 
@@ -188,8 +223,12 @@
                     <label for="antecedentFamily">Antecedentes Familiares em Oncologia</label>
                     <label for="ca">CA</label>
                     
-                    <input type="text">                
-                    <input id="ca" type="text">
+                    <div>
+                        <p>Teste</p>
+                    </div>                
+                    <div id="ca">
+                        <p>Teste</p>
+                    </div>
             </section>
 
             <section class="oncology">
@@ -197,30 +236,30 @@
                 <label id="CID" for="CID">CID</label>
                 <label id="neoplasia" for="neoplasia">Neoplasia</label>
 
-                <input id="CID" type="text"><!--CID-->            
-                <input id="neoplasia" type="text"> <!--Neoplasia-->
-
-
-
-
-
-
+                <div id="CID">
+                    <p>Teste</p>
+                </div><!--CID-->            
+                <div id="neoplasia">
+                    <p>Teste</p>
+                </div> <!--Neoplasia-->
 
                 <label for="dateOfDiagnostic">Data do Diagnostico</label>
                 <label id="trasfusionlabel" for="trasfusion">Trasfusão de Sague</label>
+           
 
-            
-
-                <input id="dateOfDiagnostic" type="date"><!--data do diagnostico-->
+                <div id="dateOfDiagnostic">
+                 <p>   00/00/0000</p>
+                </div><!--data do diagnostico-->
                 
                 <select class="trasfusionBload"> <!--input de trasfus-->
                     <option value="aceita">Aceita</option>
-                    <option value="nao_aceita">Não Aceita</option>
                 </select>
                 
                 
 
-                <input id="chemotherapy" type="text">
+                <div id="chemotherapy">
+                    <p>Teste</p>
+                </div>
 
             </section>
 
@@ -235,14 +274,14 @@
                      <label for="forOnco">Para Onco</label>
                      <label for="performance">Performace</label>
      
-                     <input id="forwardedBy" type="text"><!--Encaminhado pelo Drº-->            
-                     <input id="forOnco" type="text"><!--Para Onco-->            
+                     <div id="forwardedBy" type="text">
+                        <p>teste</p>
+                     </div><!--Encaminhado pelo Drº-->            
+                     <div id="forOnco">
+                        <p>Teste</p>
+                     </div><!--Para Onco-->            
                      <select id="performance"> <!--Performace-->
-                         <option value="1">01</option>
-                         <option value="2">02</option>
-                         <option value="3">03</option>
-                         <option value="4">04</option>
-                         <option value="5">05</option>                
+                         <option value="1">01</option>             
                      </select>
                  
                 </section>
@@ -253,16 +292,28 @@
                      <label for="">Por</label>
                      <label for="">Data de Agendamento</label>
      
-                     <input type="date">
-                     <input type="text">
-                     <input type="date">
+                     <div>
+                        <p>Teste</p>
+                     </div>
+                     <div>
+                        <p>Teste</p>
+                     </div>
+                     <div>
+                        <p>Teste</p>
+                     </div>
      
                      <label for="">Unidade de Tratamento</label>
                      <label for="">Outro</label>
                      <label for="">Utiliza Transporte</label>
-                     <input type="text">
-                     <input type="text">
-                     <input type="text">
+                     <div>
+                        <p>Teste</p>
+                    </div>
+                     <div>
+                        <p>Teste</p>
+                    </div>
+                     <div>
+                        <p>Teste</p>
+                    </div>
      
      
                 </section>
@@ -271,8 +322,12 @@
                      <label for="metastasis">Mestatáse</label>
                      <label for="surgeryDate">Cirurgia para retirada do tumor</label>
      
-                     <input id="metastasis" type="text">          
-                     <input id="surgeryDate" type="date">
+                     <div id="metastasis">
+                        <p>Teste</p>
+                     </div>         
+                     <div id="surgeryDate">
+                        <p>Teste</p>
+                     </div>
      
                 </section>
      
@@ -283,28 +338,51 @@
                      <label for="radioterapia">Radioterapia</label>
      
      
-                     <input id="quimioterapia" type="date"> <!--Quimioterapia-->               
-                     <input id="imunoterapia" type="date"> <!--Imunoterapia-->              
-                     <input id="harmonoterapia" type="date"> <!--Harmonoterapia-->              
-                     <input id="radioterapia" type="date"> <!--Radioterapia-->
+                     <div id="quimioterapia" >
+                        <p>00/00/0000</p>
+                     </div><!--Quimioterapia-->               
+                     <div id="imunoterapia" >
+                        <p>00/00/0000</p>
+                     </div> <!--Im</div>unoterapia-->              
+                     <div id="harmonoterapia" >
+                        <p>00/00/0000</p>
+                     </div> <!--Harmonoterapia-->              
+                     <div id="radioterapia" >
+                        <p>00/00/0000</p>
+                     </div> <!--Radioterapia-->
      
      
      
                      <label for="iodoterapia">Iodoterapia</label>
                      <label id="outro" for="outro">Outro</label>
      
-                     <input id="iodoterapia" type="date">
-                     <input id="outro" type="text">
+                     <div id="iodoterapia">
+                        <p>00/00/0000</p>
+                    </div>
+                    <div id="outro">
+                        <p>Teste</p>
+                    </div>
      
      
                 </section>
      
-                <section class="other">
+                <section id="otherObs" class="other">
                          <label for="atendiment">Atendimento Multidisciplinar</label>
-                         <input type="text" placeholder="-">
+                         <div>
+                            <p>Teste</p>
+                         </div>
      
                          <label for="observations">Observações</label>
-                         <input class="obs" type="text">
+                         <div class="obs">
+                            <p>Teste</p>
+                         </div>
+                       
+                         <nav id="moreMember">
+                            <span id="moreMemberFamily" class="moreMember">
+                                <img src="../utils/add_circle_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                            </span>                            
+                        </nav>
+
                 </section>
      
                 
@@ -314,11 +392,14 @@
         
         </section>
 
-  
+  <div id="containerHome">
+    <img src="../utils/home_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt="Icone prara voltar ao opções">
+  </div>
     <footer>
         <img class="imgfooter" src="../utils/Logos-02.png" alt="">
         <img class="imgfooter" src="../utils/Logos-03.png" alt="">
         <img class="imgfooter" src="../utils/Logos-04.png" alt="">
     </footer>
+    <script src="../js/cadUser.js"></script>
 </body>
 </html>
