@@ -13,6 +13,7 @@
 <body>
 
     <main class="container">
+      <section class="formContainer">
         <h2>
             Informações básicas
         </h2>
@@ -21,32 +22,40 @@
                                
                <div class="datafirst">
                     <label for="medicalRecord">Medical Record</label>
-                    <input class="fieldOfdata" type="text" id="medicalRecord" name="medicalRecord">
+                    <input class="fieldOfdata" type="text" id="medicalRecord" name="medicalRecord" placeholder="Númeor do Prontuario" >
                     
                     <label for="date">Date</label>
-                    <input class="fieldOfdata" type="text" id="date" name="medicalRecord">
+                    <input class="fieldOfdata" type="date" id="date" name="medicalRecord" >
                     
                     <label for="SIRESP">SIRESP</label>
-                    <input class="fieldOfdata" type="text" id="SIRESP" name="medicalRecord">
+                    <input class="fieldOfdata" type="text" id="SIRESP" name="medicalRecord" placeholder="Número do SIRESP">
                </div>
             </section >
 
             <section class="personalInformations">
                 <label class="label" for="suaCard">Cartão SUS</label>
-                <input type="text" id="suaCard" placeholder="">
+                <input type="text" id="suaCard" placeholder="00000000000-0000-0">
 
                 <label class="label" for="name">Nome</label>
                 <label class="label1gap" for="dateOfBirth">Data de Nacimento</label>
-                <input type="text" id="name" placeholder="">
+                <input type="text" id="name" placeholder="Digite o nome aqui">
 
                 
-                <input type="text" id="dateOfBirth" placeholder=""> <!--campo de data -->
+                <input type="date" id="dateOfBirth" placeholder=""> <!--campo de data -->
                 
                 <label class="label" for="afiliation">Filiação</label>
                 <label class="label1gap" for="gender">Sexo</label>
 
-                <input type="text" id="afiliation" placeholder=""> <!--campo de filiação -->
-                <input type="text" id="gender" placeholder=""> <!--campo de sexo -->
+                <input type="text" id="afiliation" placeholder="Digite a filiação"> <!--campo de filiação -->
+                
+                <div class="gender" class="optionSelect">
+                    <select id="valueOfSelected" id="gender" class="gender" class="selecte">
+                        <option  value="consult">Masculino</option>
+                        <option  value="register">Feminino</option>
+                        <option  value="register">Outoros</option>
+                        <option  value="register">Prefiro não informar</option>
+                    </select>
+                </div>
                 
 
 
@@ -55,40 +64,42 @@
                 <label class="oneLabel" for="CPF">CPF</label>
                 <label class="oneLabel" for="RG">RG</label>
 
-                <input type="text" id="Raça" placeholder=""><!--campo de Etinia -->
-                <input type="text" id="CPF" placeholder=""><!--campo de CPF -->
-                <input type="text" id="RG" placeholder=""><!--campo de RG -->
+                <input type="text" id="Raça" placeholder="Como você se declara?"><!--campo de Etinia -->
+                <input type="text" id="CPF" placeholder="000.000.000-00"><!--campo de CPF -->
+                <input type="text" id="RG" placeholder="00.000.000-0"><!--campo de RG -->
                 
 
                 <label class="oneLabel" for="CNS">CNS</label>
                 <label class="oneLabel" for="phoneNumber">Telefone</label>
                 <label class="oneLabel" for="civilStatus">Estado CivilS</label>
 
-                <input type="text" id="CNS" placeholder=""><!--campo de cns -->
-                <input type="text" id="phoneNumber" placeholder=""><!--campo de PHONE -->
-                <input type="text" id="civilStatus" placeholder=""><!--campo de estado civil-->
+                <input type="text" id="CNS" placeholder="0000000000"><!--campo de cns -->
+                <input type="text" id="phoneNumber" placeholder="(00) 00000-0000"><!--campo de PHONE -->
+                <div class="gender" class="optionSelect"><!--campo de estado civil-->
+                    <select id="valueOfSelected" id="gender" class="gender" class="selecte">
+                        <option  value="consult">Solteiro</option>
+                        <option  value="register">Casado</option>
+                        <option  value="register">Outoros</option>
+                    </select>
+                </div>
                 
             </section>
 
          </form>
+      </section>
+         <nav>
+            <!-- mudar caminho com js -->
+                <button id="homeButton" class="buttonBase" >
+                    Home
+                </button>
+                <button id="nextButton" class="buttonBase" type="submit">
+                    Proximo
+                 </button>
+        </nav>
        
     </main>
 
-    <nav>
-
-        <!-- mudar caminho com js -->
-        <a href="../../index.html">
-            <button class="buttonBase">
-                Home
-            </button>
-        </a>
-       
-        <a href="./registerClientFamily.html">
-            <button class="buttonBase">
-                Proximo
-             </button>
-        </a>
-    </nav>
+ 
 
     <footer>
    
@@ -100,5 +111,8 @@
             <img class="imgfooter" src="../utils/Logos-04.png" alt="">
        
     </footer>
+
+    <script src="../js/registerPG1.js"></script>
+   
 </body>
 </html>
