@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" href="../style/styleSelectTeste.css"/> 
+ 
+
+        <title>Teste</title>
+</head>
+<body>
+
+        <section id="base-information" class="container">
+            <h2>
+                Informações básicas
+            </h2>
+            <form action="/submit" method="post">
+                <section class="header">
+                                
+                <div class="datafirst">
+                        <label for="medicalRecord">Medical Record</label>
+                        <input class="fieldOfdata" type="text" id="medicalRecord" name="medicalRecord">
+                        
+                        <label for="date">Date</label>
+                        <input class="fieldOfdata" type="text" id="date" name="medicalRecord">
+                        
+                        <label for="SIRESP">SIRESP</label>
+                        <input class="fieldOfdata" type="text" id="SIRESP" name="medicalRecord">
+                </div>
+                </section >
+
+                <section class="personalInformations">
+                    <label class="label" for="suaCard">Cartão SUS</label>
+                    <input type="text" id="suaCard" placeholder="">
+
+                    <label class="label" for="name">Nome</label>
+                    <label class="label1gap" for="dateOfBirth">Data de Nacimento</label>
+                    <input type="text" id="name" placeholder="">
+
+                    
+                    <input type="text" id="dateOfBirth" placeholder=""> <!--campo de data -->
+                    
+                    <label class="label" for="afiliation">Filiação</label>
+                    <label class="label1gap" for="gender">Sexo</label>
+
+                    <input type="text" id="afiliation" placeholder=""> <!--campo de filiação -->
+                    <input type="text" id="gender" placeholder=""> <!--campo de sexo -->
+                    
+
+
+
+                    <label class="oneLabel" for="Raça">Etinia</label>
+                    <label class="oneLabel" for="CPF">CPF</label>
+                    <label class="oneLabel" for="RG">RG</label>
+
+                    <input type="text" id="Raça" placeholder=""><!--campo de Etinia -->
+                    <input type="text" id="CPF" placeholder=""><!--campo de CPF -->
+                    <input type="text" id="RG" placeholder=""><!--campo de RG -->
+                    
+
+                    <label class="oneLabel" for="CNS">CNS</label>
+                    <label class="oneLabel" for="phoneNumber">Telefone</label>
+                    <label class="oneLabel" for="civilStatus">Estado CivilS</label>
+
+                    <input type="text" id="CNS" placeholder=""><!--campo de cns -->
+                    <input type="text" id="phoneNumber" placeholder=""><!--campo de PHONE -->
+                    <input type="text" id="civilStatus" placeholder=""><!--campo de estado civil-->
+                    
+                </section>
+
+            </form>
+
+            <h2>
+                Informações Familiares
+            </h2>
+            <form action="/submit" method="post">
+
+                <section class="familyInformations">
+                    <h5> 
+                        COMPOSIÇÃO FAMILIAR
+                        <span class="hide">
+                        Ocultar
+                        </span>
+                    </h5>
+
+                
+                <section class="newMenber">
+                    <input type="text" id="newMenberName" placeholder="Nome">
+                    <input type="text" id="newMenberOld" placeholder="idade">
+                    <input type="text" id="newMenberPararents" placeholder="Parentesco">
+                    <input type="text" id="newMenberEducation" placeholder="Escolaridade">
+                    <input type="text" id="newMenberProfession" placeholder="Profissão">
+                    <input type="text" id="newMenberIncome" placeholder="Renda">
+                </section>
+                    
+
+                <nav id="moreMember">
+                    <span class="moreMember">
+                        <img src="../utils/add_circle_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                    </span>
+                </nav>
+
+                <input type="text" id="newMenberIncomeTotal" placeholder="Renda Total">
+
+                </section>
+
+                <section class="home">
+                    <h5>
+                        SITUAÇÃO HABITACIONAL
+                        <span class="hide">
+                            Ocultar
+                        </span>
+                    </h5>
+
+                    <label for="house">Casa</label>
+                    <label for="stayHere">Tempo de Moradia no Municipio</label>
+
+                    <input id="house" type="text">               
+                    <input id="stayHere" type="text">
+
+                </section>
+
+            <section class="illnesses">
+
+                <div class="health">
+                        <h6>CONSIÇÕES DE SAÚDE</h6>
+                        <h6>CONSIÇÕES DE SAÚDE</h6> <!--Legenda da segunda seção dessa div-->
+                        <section class="healthdata">
+
+                            <input id="Diabetic" type="checkbox">
+                            <label for="Diabetic">Diabetico</label>
+
+                            <input id="hypertensive" type="checkbox">
+                            <label for="hypertensive">Hipertenso</label>
+                            
+                            <input id="renal" type="checkbox">
+                            <label for="renal">Renal</label>
+
+                            <input id="hiv" type="checkbox">
+                            <label for="hiv">HIV</label>
+                            
+                            <input id="tb" type="checkbox">
+                            <label for="tb">TB</label>
+                            
+                            <input id="mh" type="checkbox">
+                            <label for="mh">MH</label>
+                            
+                        </section>
+
+                    
+                        <section class="healthdata disabled" >
+
+                            <input id="physics" type="checkbox">
+                            <label for="physics">Físico</label>
+
+                            <input id="mental" type="checkbox">
+                            <label for="mental">Mental</label>
+                            
+                            <input id="visual" type="checkbox">
+                            <label for="visual">Visual</label>
+
+                        </section>
+
+                </div>
+
+                <div class="health">
+
+                    <section class="otherData">  
+
+                        <label  for="otherCondition">Condição de Saúde</label>
+                        <input id="otherCondition" type="text" placeholder="Outros">
+
+                        <label id="labelotherCondition" for="otherDeficiency">Deficência</label>
+                        <input id="otherDeficiency" type="text">
+
+                    </section>    
+
+                </div>
+            </section>
+
+
+            <section class="antecedent">   
+                    <label for="antecedentFamily">Antecedentes Familiares em Oncologia</label>
+                    <label for="ca">CA</label>
+                    
+                    <input type="text">                
+                    <input id="ca" type="text">
+            </section>
+
+            <section class="oncology">
+            
+                <label id="CID" for="CID">CID</label>
+                <label id="neoplasia" for="neoplasia">Neoplasia</label>
+
+                <input id="CID" type="text"><!--CID-->            
+                <input id="neoplasia" type="text"> <!--Neoplasia-->
+
+
+
+
+
+
+
+                <label for="dateOfDiagnostic">Data do Diagnostico</label>
+                <label id="trasfusionlabel" for="trasfusion">Trasfusão de Sague</label>
+
+            
+
+                <input id="dateOfDiagnostic" type="date"><!--data do diagnostico-->
+                
+                <select class="trasfusionBload"> <!--input de trasfus-->
+                    <option value="aceita">Aceita</option>
+                    <option value="nao_aceita">Não Aceita</option>
+                </select>
+                
+                
+
+                <input id="chemotherapy" type="text">
+
+            </section>
+
+
+            </form>
+
+            <form action="/submit" method="post">
+
+                <section class="dateDoctors">
+                
+                     <label for="forwardedBy">Encaminhado pelo Drº</label>
+                     <label for="forOnco">Para Onco</label>
+                     <label for="performance">Performace</label>
+     
+                     <input id="forwardedBy" type="text"><!--Encaminhado pelo Drº-->            
+                     <input id="forOnco" type="text"><!--Para Onco-->            
+                     <select id="performance"> <!--Performace-->
+                         <option value="1">01</option>
+                         <option value="2">02</option>
+                         <option value="3">03</option>
+                         <option value="4">04</option>
+                         <option value="5">05</option>                
+                     </select>
+                 
+                </section>
+     
+                <section class="treatment">
+                 <h6>TRATAMENTO ONCOLÓGICO</h6>
+                     <label for="">Inserido na Rede</label>
+                     <label for="">Por</label>
+                     <label for="">Data de Agendamento</label>
+     
+                     <input type="date">
+                     <input type="text">
+                     <input type="date">
+     
+                     <label for="">Unidade de Tratamento</label>
+                     <label for="">Outro</label>
+                     <label for="">Utiliza Transporte</label>
+                     <input type="text">
+                     <input type="text">
+                     <input type="text">
+     
+     
+                </section>
+     
+                <section class="surgery">
+                     <label for="metastasis">Mestatáse</label>
+                     <label for="surgeryDate">Cirurgia para retirada do tumor</label>
+     
+                     <input id="metastasis" type="text">          
+                     <input id="surgeryDate" type="date">
+     
+                </section>
+     
+                <section class="treatmentDates">
+                     <label for="quimioterapia">Quimioterapia</label>
+                     <label for="imunoterapia">Imunoterapia</label>
+                     <label for="harmonoterapia">Harmonoterapia</label>
+                     <label for="radioterapia">Radioterapia</label>
+     
+     
+                     <input id="quimioterapia" type="date"> <!--Quimioterapia-->               
+                     <input id="imunoterapia" type="date"> <!--Imunoterapia-->              
+                     <input id="harmonoterapia" type="date"> <!--Harmonoterapia-->              
+                     <input id="radioterapia" type="date"> <!--Radioterapia-->
+     
+     
+     
+                     <label for="iodoterapia">Iodoterapia</label>
+                     <label id="outro" for="outro">Outro</label>
+     
+                     <input id="iodoterapia" type="date">
+                     <input id="outro" type="text">
+     
+     
+                </section>
+     
+                <section class="other">
+                         <label for="atendiment">Atendimento Multidisciplinar</label>
+                         <input type="text" placeholder="-">
+     
+                         <label for="observations">Observações</label>
+                         <input class="obs" type="text">
+                </section>
+     
+                
+              </form>
+
+            
+        
+        </section>
+
+  
+    <footer>
+        <img class="imgfooter" src="../utils/Logos-02.png" alt="">
+        <img class="imgfooter" src="../utils/Logos-03.png" alt="">
+        <img class="imgfooter" src="../utils/Logos-04.png" alt="">
+    </footer>
+</body>
+</html>

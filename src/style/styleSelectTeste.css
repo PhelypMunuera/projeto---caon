@@ -1,0 +1,304 @@
+@import url(./reset.css);
+@import url(./buttonsBase.css);
+@import url('./centerOfBackgroud.css');
+
+body {
+    display: flex;
+    background-image: url(../utils/Backgroud-2.png);
+    width: 100vw;
+    height: 100vh;
+    background-color: #405cb8;
+    flex-direction: column;
+}
+
+.container {
+    background-color: #fff;
+    margin: auto;
+    border-radius: 16px;
+    padding: 40px;
+    margin-top: 60px;
+    width: 45%;
+}
+
+input {
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+h1 {
+    color: #f0f0f0;
+}
+
+h2 {
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+h5, h6 {
+    margin-top: 20px;
+}
+
+nav {
+    margin: auto;
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+footer > img {
+    width: 120px;
+}
+
+.datafirst {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #f0f0f0;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    margin: auto;
+    gap: 4px;
+}
+
+.datafirst > input {
+    border: none;
+    background-color: #e4e4e4;
+    border-radius: 4px;
+}
+
+#avatar {
+    max-width: 150px;
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+.personalInformations {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+}
+
+.personalInformations > input {
+    height: 32px;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+.label, .label1gap, .oneLabel {
+    margin-top: 12px;
+    padding: 0 0 0 4px;
+}
+
+#suaCard, #name, #afiliation {
+    grid-column: span 2;
+}
+
+.newMenber {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 10px;
+}
+
+#newMenberName {
+    grid-column: span 5;
+}
+
+#newMenberPararents, #newMenberEducation, #newMenberProfession, #newMenberIncome {
+    grid-column: span 3;
+}
+
+#newMenberIncomeTotal {
+    width: 30%;
+}
+
+#moreMember {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    padding: 15px;
+}
+
+.moreMember > img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.home > h5 {
+    grid-column: span 2;
+}
+
+.illnesses, .health {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+}
+
+.healthdata {
+    background-color: #f0f0f0;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    border-radius: 8px;
+    gap: 5px;
+    padding: 5px;
+}
+
+.healthdata > input {
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+}
+
+.disabled {
+    height: 100%;
+    align-items: center;
+    height: 90px;
+}
+
+.otherData {
+    margin-top: 20px;
+}
+
+#otherCondition {
+    margin-bottom: 20px;
+}
+
+.antecedent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.oncology {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    margin-top: 20px;
+}
+
+#CID {
+    grid-column: span 1;
+}
+
+#neoplasia {
+    grid-column: span 9;
+}
+
+#dateOfDiagnostic {
+    grid-column: span 1;
+}
+
+.trasfusionBload {
+    grid-column: span 4;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 8px;
+}
+
+#trasfusion {
+    grid-column: span 6;
+    background-color: #405cb8;
+}
+
+#trasfusionlabel {
+    grid-column: span 9;
+}
+
+#chemotherapy {
+    grid-column: span 5;
+}
+
+.dateDoctors, .treatment, .treatmentDates {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 5px;
+}
+
+.treatmentDates {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#outro {
+    grid-column: span 3;
+}
+
+.other {
+    display: flex;
+    flex-direction: column;
+}
+
+.other > label {
+    margin: 20px 0 5px 0;
+}
+
+.surgery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 5px;
+}
+
+label {
+    padding: 0 0 0 5px;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .container {
+        width: 60%;
+    }
+    nav {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+    .personalInformations {
+        grid-template-columns: 1fr;
+    }
+    .newMenber {
+        grid-template-columns: 1fr;
+    }
+    .health, .home, .illnesses {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+    h1, h2 {
+        font-size: 1.2rem;
+    }
+    input {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
