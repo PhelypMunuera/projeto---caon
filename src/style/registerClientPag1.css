@@ -1,6 +1,7 @@
 @import url(./reset.css);
 @import url(./buttonsBase.css);
 @import url('./centerOfBackgroud.css');
+@import url('./styleDate.css');
 
 body{
   display: flex;
@@ -145,4 +146,10 @@ footer {
     bottom: 10px;
     left: 50%; 
     transform: translate(-50%);
+}
+
+input::placeholder{
+    color: #8f94a5;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
 }

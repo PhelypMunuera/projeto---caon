@@ -22,24 +22,25 @@
             <section class="familyInformations">
                 <h5> 
                      COMPOSIÇÃO FAMILIAR
-                    <span class="hide">
-                      Ocultar
-                    </span>
                 </h5>
 
                
-              <section class="newMenber">
-                <input type="text" id="newMenberName" placeholder="Nome">
-                <input type="text" id="newMenberOld" placeholder="idade">
-                <input type="text" id="newMenberPararents" placeholder="Parentesco">
-                <input type="text" id="newMenberEducation" placeholder="Escolaridade">
-                <input type="text" id="newMenberProfession" placeholder="Profissão">
-                <input type="text" id="newMenberIncome" placeholder="Renda">
-              </section>
+              <div id="members" id="containerId">
+                <section class="newMenber">
+                    <input type="text" id="newMenberName" placeholder="Nome">
+                    <input type="text" id="newMenberOld" placeholder="idade">
+                    <input type="text" id="newMenberPararents" placeholder="Parentesco">
+                    <input type="text" id="newMenberEducation" placeholder="Escolaridade">
+                    <input type="text" id="newMenberProfession" placeholder="Profissão">
+                    <input type="text" id="newMenberIncome" placeholder="Renda">
+                </section>
+    
+               
+              </div>
                 
 
             <nav id="moreMember">
-                <span class="moreMember">
+                <span id="moreMemberFamily" class="moreMember">
                     <img src="../utils/add_circle_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt="">
                 </span>
             </nav>
@@ -51,16 +52,13 @@
             <section class="home">
                 <h5>
                     SITUAÇÃO HABITACIONAL
-                    <span class="hide">
-                        Ocultar
-                    </span>
                 </h5>
 
                 <label for="house">Casa</label>
                 <label for="stayHere">Tempo de Moradia no Municipio</label>
 
-                <input id="house" type="text">               
-                <input id="stayHere" type="text">
+                <input id="house" type="text" placeholder="Informe o Endereço:">               
+                <input id="stayHere" type="text" placeholder="Em anos">
 
             </section>
 
@@ -115,7 +113,7 @@
                     <input id="otherCondition" type="text" placeholder="Outros">
 
                     <label id="labelotherCondition" for="otherDeficiency">Deficência</label>
-                    <input id="otherDeficiency" type="text">
+                    <input id="otherDeficiency" type="text" placeholder="Outros">
 
                 </section>    
 
@@ -127,8 +125,8 @@
                 <label for="antecedentFamily">Antecedentes Familiares em Oncologia</label>
                 <label for="ca">CA</label>
                 
-                <input type="text">                
-                <input id="ca" type="text">
+                <input type="text" placeholder="Sim/Não">                
+                <input id="ca" type="text" placeholder="-">
            </section>
 
            <section class="oncology">
@@ -136,8 +134,8 @@
             <label id="CID" for="CID">CID</label>
             <label id="neoplasia" for="neoplasia">Neoplasia</label>
 
-            <input id="CID" type="text"><!--CID-->            
-            <input id="neoplasia" type="text"> <!--Neoplasia-->
+            <input id="CID" type="text" placeholder="AA-000"><!--CID-->            
+            <input id="neoplasia" type="text" placeholder="-"> <!--Neoplasia-->
 
 
 
@@ -159,7 +157,7 @@
             
                
 
-            <input id="chemotherapy" type="text">
+            <input id="chemotherapy" type="text" placeholder="-">
 
            </section>
 
@@ -170,16 +168,12 @@
 
     <nav>
         <!-- mudar caminho com js -->
-        <a href="./registerClient.html">
-            <button class="buttonBase">
+            <button id="homeButton" class="buttonBase" >
                 Anterior
             </button>
-        </a>
-        <a href="./registerMedicalInformation.html">
-            <button class="buttonBase">
+            <button id="nextButton" class="buttonBase" type="submit">
                 Proximo
              </button>
-        </a>
     </nav>
 
     <footer>
@@ -189,5 +183,6 @@
             <img class="imgfooter" src="../utils/Logos-04.png" alt="">
        
     </footer>
+    <script src="../js/registerPG2.js"></script>
 </body>
 </html>
