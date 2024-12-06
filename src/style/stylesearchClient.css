@@ -47,7 +47,9 @@ nav{
     align-items: center;
 }
 
-
+#optionsButtons{
+    display: flex;
+}
 
 .title{
     font-family: "Montserrat", sans-serif;
@@ -67,5 +69,8 @@ footer > img {
 }
 footer {
     display: flex;
-justify-content: center;  
+    position: absolute;
+    bottom: 10px;
+    left: 50%; 
+    transform: translate(-50%);
 }
