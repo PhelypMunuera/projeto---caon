@@ -126,6 +126,10 @@ footer > img {
     width: 120px;
 }
 footer {
-    display: flex;
-justify-content: center;  
-}
+ 
+        display: flex;
+        position: absolute;
+        bottom: 10px;
+        left: 50%; 
+        transform: translate(-50%);
+} 
